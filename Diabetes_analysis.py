@@ -8,7 +8,7 @@ import seaborn as sns
 #import csv file
 #convert file to dataframe
 
-df = pd.read_csv["Diabetes.csv"]
+df = pd.read_csv["diabetes.csv"]
 st.write(df.head())
 
 

@@ -11,6 +11,8 @@ import seaborn as sns
 df = pd.read_csv("Diabetes.csv")
 st.write(df.head())
 
+df = pd.read_csv("Diabetes.csv")
+st.write(df.tail())
 
 
 

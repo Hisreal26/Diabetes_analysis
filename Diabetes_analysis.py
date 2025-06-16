@@ -20,7 +20,10 @@ df = pd.read_csv("Diabetes.csv")
 st.markdown("# LAST SEVEN ARGUMENT")
 st.write(df.tail(7))
 
-
+#code for data inspection
+st.markdown("#### DESCRIBE")
+Hisreal_ = df.describe()
+st.table(Hisreal_)
 
 
 

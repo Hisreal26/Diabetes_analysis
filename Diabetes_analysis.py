@@ -49,7 +49,11 @@ st.title("PIE REPRESENTATION")
 BloodPressure =px.pie(df["BloodPressure"], y = "BloodPressure", title = "BloodPressure")
 st.plotly_chart(BloodPressure, use_container_width = True)
 
-
+st.title("PIE REPRESENTATION")
+counted = df["Pregnancies"].value_counts().reset_index()
+counted.columns = ["Pregnancies", "count"]
+Pregnancies2 = px.pie(counted, names="Pregnancies", values="count", title="BloodPressure")
+st.plotly_chart(Pregnancies2, use_container_width = True)
 
 
 

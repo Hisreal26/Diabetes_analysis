@@ -48,7 +48,7 @@ st.plotly_chart(BloodPressure, use_container_width = True)
 st.markdown("### BIVARIATE ANALYSIS")
 st. markdown("Pregnancies vs Blood Pressure")
 sns.scatterplot(data=df, x='Pregnancies', y='BloodPressure')
-pt.title("Pregnancies vs Blood Pressure")
+pt.write("Pregnancies vs Blood Pressure")
 pt.show()
 
 

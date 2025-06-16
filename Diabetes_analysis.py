@@ -17,6 +17,7 @@ st.markdown("# FIRST FIVE ARGUMENT")
 st.write(df.head())
 
 df = pd.read_csv("Diabetes.csv")
+st.markdown("# LAST FIVE ARGUMENT")
 st.write(df.tail())
 
 

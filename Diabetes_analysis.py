@@ -34,7 +34,7 @@ st.markdown("## UNIVARIATE VARIABLES")
 #code to pick a column in a table - univariate
 df = pd.read_csv("Diabetes.csv")
 BMI = df["BMI"].describe()
-st.markdown("### label BMI")
+st.markdown("### Glucose BMI")
 st.write(BMI)
 
 

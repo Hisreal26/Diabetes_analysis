@@ -38,8 +38,8 @@ st.markdown("### BMI")
 st.write(BMI)
 
 st.title("HISTOGRAM REPRESENTATION")
-BMI =px.histogram(df["BMI"], x = "BMI", title = "BloodPressure")
-st.plotly_chart(BMI, use_container_width = True)
+BloodPressure =px.histogram(df["BloodPressure"], x = "BloodPressure", title = "BloodPressure")
+st.plotly_chart(BloodPressure, use_container_width = True)
 
 st.title("BAR REPRESENTATION")
 BloodPressure =px.bar(df["BloodPressure"], y = "BloodPressure", title = "BloodPressure")

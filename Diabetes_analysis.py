@@ -13,11 +13,11 @@ import plotly.express as px
 st.title("Diabetes.csv")
 #import my csv file
 df = pd.read_csv("Diabetes.csv")
-st.markdown("# FIRST FIVE ARGUMENT")
+st.markdown("# FIRST SEVEN ARGUMENT")
 st.write(df.head(7))
 
 df = pd.read_csv("Diabetes.csv")
-st.markdown("# LAST FIVE ARGUMENT")
+st.markdown("# LAST SEVEN ARGUMENT")
 st.write(df.tail(7))
 
 

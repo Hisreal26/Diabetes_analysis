@@ -41,11 +41,12 @@ st.title("HISTOGRAM REPRESENTATION")
 BMI =px.histogram(df["BMI"], x = "BMI", title = "BloodPressure")
 st.plotly_chart(BMI, use_container_width = True)
 
+
 st.markdown("### BIVARIATE ANALYSIS")
 st. markdown("Pregnancies vs Blood Pressure")
 bp = px.bar(df,x = "Pregnancies", y = "BloodPressure", title="Distribution of Pregnancies vs Blood Pressure")
 st.write(df("Pregnancies, BloodPreesure").describe())
-
+st.plotly_chart(BloodPressure, use_container_width = True)
 
 
 #import  python -m pip install scikit-learn

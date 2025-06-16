@@ -37,6 +37,13 @@ BMI = df["BMI"].describe()
 st.markdown("### BMI")
 st.write(BMI)
 
+st.markdown("## UNIVARIATE ANALYSIS FOR PREGNANCIES")
+#code to pick a column in a table - univariate
+df = pd.read_csv("Diabetes.csv")
+Pregnancies = df["Pregnancies"].describe()
+st.markdown("### Pregnancies")
+st.write(Pregnancies)
+
 st.title("HISTOGRAM REPRESENTATION")
 BloodPressure =px.histogram(df["BloodPressure"], x = "BloodPressure", title = "BloodPressure")
 st.plotly_chart(BloodPressure, use_container_width = True)

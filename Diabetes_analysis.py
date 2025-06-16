@@ -14,11 +14,12 @@ st.title("Diabetes.csv")
 #import my csv file
 df = pd.read_csv("Diabetes.csv")
 st.markdown("# FIRST FIVE ARGUMENT")
-st.write(df.head(10))
+st.write(df.head(7))
 
 df = pd.read_csv("Diabetes.csv")
 st.markdown("# LAST FIVE ARGUMENT")
-st.write(df.tail(10))
+st.write(df.tail(7))
+
 
 
 

@@ -42,7 +42,7 @@ BMI =px.histogram(df["BMI"], x = "BMI", title = "BloodPressure")
 st.plotly_chart(BMI, use_container_width = True)
 
 st.title("BAR REPRESENTATION")
-BMI =px.bar(df["BMI"], x = "BMI", title = "BloodPressure")
+BloodPressure =px.bar(df["BMI"], x = "BMI", title = "BloodPressure")
 st.plotly_chart(BMI, use_container_width = True)
 
 st.markdown("### BIVARIATE ANALYSIS")

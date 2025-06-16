@@ -37,6 +37,13 @@ BMI = df["BMI"].describe()
 st.markdown("### BMI")
 st.write(BMI)
 
+#display string type data using bar chart
+st.title("BAR GRAPH REPRESENTATION")
+BMI_count = df["BMI"].value_counts()
+BMI_count.columns = ["BMI", "counts"]
+BloodPressure2 =px.bar(df["BMI"], x = "BMI", title = "BloodPressure")
+st.plotly_chart(BloodPressure2, use_container_width = True)
+
 
 
 #import  python -m pip install scikit-learn

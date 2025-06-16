@@ -26,7 +26,7 @@ Hisreal_ = df.describe()
 st.table(Hisreal_)
 
 #code for data inspection
-st.markdown("#### SHAPE")
+st.markdown("#### OVERVIEW")
 Hisreal_ = df.shape
 st.table(Hisreal_)
 

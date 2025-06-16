@@ -25,6 +25,11 @@ st.markdown("#### DESCRIBE")
 Hisreal_ = df.describe()
 st.table(Hisreal_)
 
+#code for data inspection
+st.markdown("#### SHAPE")
+Hisreal_ = df.shape
+st.table(Hisreal_)
+
 
 
 

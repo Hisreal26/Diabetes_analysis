@@ -13,11 +13,11 @@ st.title("# DIABETES ANALYSIS")
 st.markdown("## OVERVIEW")
 
 #import my csv file
-st.markdown("### FIRST 5 OBSERVATION")
+st.markdown("### FIRST SEVEN OBSERVATIONS")
 df = pd.read_csv("Diabetes.csv")
 st.write(df.head(7))
 
-st.markdown("### LAST 5 OBSERVATION")
+st.markdown("### LAST SEVEN OBSERVATIONS")
 df = pd.read_csv("Diabetes.csv")
 st.write(df.tail(7))
 
@@ -77,3 +77,4 @@ st.markdown("## BIVARIATE ANALYSIS")
 st.markdown("### Blood Pressure vs Pregnancies")
 df2 = pd.DataFrame(df["BloodPressure"],df["Pregnancies"])
 st.write(df2)
+

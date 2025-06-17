@@ -15,11 +15,11 @@ st.markdown("## OVERVIEW")
 #import my csv file
 st.markdown("### FIRST 5 OBSERVATION")
 df = pd.read_csv("Diabetes.csv")
-st.write(df.head(10))
+st.write(df.head(7))
 
 st.markdown("### LAST 5 OBSERVATION")
 df = pd.read_csv("Diabetes.csv")
-st.write(df.tail(10))
+st.write(df.tail(7))
 
 st.markdown("### DATA INFO")
 AK = df.shape
@@ -37,12 +37,43 @@ st.write(df["BloodPressure"].head())
 
 #UNIVARIATE ANALYSIS
 st.markdown("### UNIVARIATE ANALYSIS")
-st.markdown("### BLOOD PRESSURE")
+st.markdown("### BLOOD PRESSURE ANALYSIS")
+df = pd.read_csv("Diabetes.csv")
 st.write(df["BloodPressure"].describe())
 
-fig = px.bar(df["BloodPressure"], y= "BloodPressure", title="")
-st.plotly_chart(fig, use_container_width=True)
+st.markdown("### BODY MASS INDEX ANALYSIS")
+df = pd.read_csv("Diabetes.csv")
+st.write(df["BMI"].describe())
+
+st.markdown("### PREGNANCIES ANALYSIS")
+df = pd.read_csv("Diabetes.csv")
+st.write(df["Pregnancies"].describe())
+
+st.markdown("### SKIN THICKNESS ANALYSIS")
+df = pd.read_csv("Diabetes.csv")
+st.write(df["SkinThickness"].describe())
+
+st.markdown("### GLUCOSE ANALYSIS")
+df = pd.read_csv("Diabetes.csv")
+st.write(df["Glucose"].describe())
+
+st.markdown("### INSULIN ANALYSIS")
+df = pd.read_csv("Diabetes.csv")
+st.write(df["Insulin"].describe())
+
+st.title("HISTOGRAM REPRESENTATION")
+BP = px.histogram(df["BloodPressure"], y= "BloodPressure", title="Pressure Distribution")
+st.plotly_chart(BP, use_container_width=True)
+
+st.title("BAR REPRESENTATION")
+BP2 = px.bar(df["BloodPressure"], y= "BloodPressure", title="Pressure Distribution")
+st.plotly_chart(BP2, use_container_width=True)
+
+Pregg = px.bar(df["Pregnancies"], y ="Pregnancies", title = "Pregnancies Distribution")
+st.plotly_chart(Pregg, use_container_width = True)
 
 #BIVARIATE ANALYSIS
 st.markdown("## BIVARIATE ANALYSIS")
 st.markdown("### Blood Pressure vs Pregnancies")
+df2 = pd.DataFrame(df["BloodPressure"],df["Pregnancies"])
+st.write(df2)

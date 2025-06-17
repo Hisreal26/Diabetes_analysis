@@ -32,8 +32,8 @@ st.write(correlation)
 st.markdown("### BLOOD PRESSURE")
 st.write(df["BloodPressure"].describe())
 
-st.markdown("### FIRST 5 BLOOD PRESSURE")
-st.write(df["BloodPressure"].head())
+st.markdown("### FIRST SEVEN BLOOD PRESSURE")
+st.write(df["BloodPressure"].head(7))
 
 #UNIVARIATE ANALYSIS
 st.markdown("### UNIVARIATE ANALYSIS")

@@ -13,13 +13,13 @@ st.title("DIABETES ANALYSIS")
 st.markdown("## OVERVIEW")
 
 #import my csv file
-st.markdown("### FIRST FIVE OBSERVATIONS")
+st.markdown("### FIRST TEN OBSERVATIONS")
 df = pd.read_csv("Diabetes.csv")
-st.write(df.head())
+st.write(df.head(10))
 
-st.markdown("### LAST FIVE OBSERVATIONS")
+st.markdown("### LAST TEN OBSERVATIONS")
 df = pd.read_csv("Diabetes.csv")
-st.write(df.tail())
+st.write(df.tail(10))
 
 st.markdown("### DATA INFO")
 AK = df.shape
@@ -32,8 +32,8 @@ st.write(correlation)
 st.markdown("### BLOOD PRESSURE")
 st.write(df["BloodPressure"].describe())
 
-st.markdown("### FIRST FIVE BLOOD PRESSURE")
-st.write(df["BloodPressure"].head())
+st.markdown("### FIRST TEN BLOOD PRESSURE")
+st.write(df["BloodPressure"].head(10))
 
 #UNIVARIATE ANALYSIS
 st.markdown("### UNIVARIATE ANALYSIS")
